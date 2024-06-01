@@ -1,0 +1,11 @@
+
+<div style="text-align: center" class="counter-container">
+  <p>counter works!</p>
+
+  <h1> My Counter App </h1>
+  <button class="button-style"  (click)="decrement()"> - </button>
+  <p [ngStyle]="{'background-color': count > 10 ? 'red' : 'transparent'}">
+    {{ count }}
+  </p>
+  <button class="button-style"  (click)="increment()"> + </button>
+</div>

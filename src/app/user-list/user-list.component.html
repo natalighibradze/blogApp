@@ -1,0 +1,6 @@
+<ul>
+
+  <li *ngFor="let user of userList; let i = index" [ngStyle]="{'background-color': i % 2 === 0 ? '#red' : 'inherit'}">
+    {{ user }}
+  </li>
+</ul>

@@ -1,0 +1,72 @@
+.counter-container { /* Replace with your desired class name */
+  align-items: center;
+  margin: auto;
+  min-width: 400px;
+
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  color: #000000;
+  background: #ffffff;
+  background-clip: padding-box;
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(to right, red, orange); /* Adjust gradient colors */
+  }
+}
+
+.value-style{
+  margin: 0 10px;
+}
+
+
+.button-style {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Add transition properties */
+
+}
+
+.button-style:hover,
+.button-style:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-style:active {
+  opacity: 0.5;
+}
+
+
+.button-style:hover {
+  /* Existing styles from previous steps */
+  transform: scale(1.02); /* Slight scale up on hover */
+}

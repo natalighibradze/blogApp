@@ -1,0 +1,9 @@
+.app-container {
+    min-height: 100vh; /* Sets minimum height for full viewport coverage */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  

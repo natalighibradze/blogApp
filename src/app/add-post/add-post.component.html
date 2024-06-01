@@ -1,0 +1,10 @@
+<div class="add-post-container">
+  <h2 class="heading">Add Post</h2>
+  <div class="input-group">
+    <input type="text" class="form-control" [(ngModel)]="title" placeholder="Title">
+  </div>
+  <div class="input-group">
+    <textarea class="form-control" [(ngModel)]="content" placeholder="Content"></textarea>
+  </div>
+  <button class="btn btn-primary" (click)="addPost()">Add</button>
+</div>
